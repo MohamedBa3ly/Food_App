@@ -9,12 +9,12 @@
 5. Cart screen show total price and your order.
 
 ## Screenshots
-<img src="https://user-images.githubusercontent.com/103647107/214614799-edee6df7-d458-4e36-b271-edccdbf82075.png" width="400" height="600" >
-<img src="https://user-images.githubusercontent.com/103647107/214615054-ab444b3b-f4ef-4f57-805f-0b5d2ffbc25e.png" width="400" height="600" >
-<img src="https://user-images.githubusercontent.com/103647107/214615306-f217cb97-161d-451e-b730-33b738efd809.png" width="400" height="600" >
-<img src="https://user-images.githubusercontent.com/103647107/214615442-9192d82a-07cd-4c31-a688-3c5738adf2d6.png" width="400" height="600" >
-<img src="https://user-images.githubusercontent.com/103647107/214615616-b8ac81fd-e1eb-466f-98d4-aa4f3542d5e7.png" width="400" height="600" >
-<img src="https://user-images.githubusercontent.com/103647107/214615790-2bab9f28-439f-4602-8a94-9e4c82f88085.png" width="400" height="600" >
+<img src="https://user-images.githubusercontent.com/103647107/214614799-edee6df7-d458-4e36-b271-edccdbf82075.png" width="330" height="600" >
+<img src="https://user-images.githubusercontent.com/103647107/214615054-ab444b3b-f4ef-4f57-805f-0b5d2ffbc25e.png" width="330" height="600" >
+<img src="https://user-images.githubusercontent.com/103647107/214615306-f217cb97-161d-451e-b730-33b738efd809.png" width="330" height="600" >
+<img src="https://user-images.githubusercontent.com/103647107/214615442-9192d82a-07cd-4c31-a688-3c5738adf2d6.png" width="330" height="600" >
+<img src="https://user-images.githubusercontent.com/103647107/214615616-b8ac81fd-e1eb-466f-98d4-aa4f3542d5e7.png" width="330" height="600" >
+<img src="https://user-images.githubusercontent.com/103647107/214615790-2bab9f28-439f-4602-8a94-9e4c82f88085.png" width="330" height="600" >
 
 ## Architecture
 1. MVVM (Model-View-ViewModel) Architecture is used in this project.
