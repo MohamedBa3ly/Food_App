@@ -18,8 +18,9 @@
 
 ## Architecture
 1. MVVM (Model-View-ViewModel) Architecture is used in this project.
-2. Use the property delegate created by preferencesDataStore to create an instance of Datastore<Preferences>. Call it once at the top level of your kotlin file, and access it through this property throughout the rest of your application.
-3. Save data in a local database using Room :
+2. Dependency injection with Hilt.
+3. Use the property delegate created by preferencesDataStore to create an instance of Datastore<Preferences>. Call it once at the top level of your kotlin file, and access it through this property throughout the rest of your application.
+4. Save data in a local database using Room :
 
 <img src="https://user-images.githubusercontent.com/103647107/214617677-11e082ab-a04a-444c-adf6-bdbc30204211.png" width="400" height="600" >
 
