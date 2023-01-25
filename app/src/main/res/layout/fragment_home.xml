@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_ground"
+        android:layout_margin="8dp">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/Search_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="@drawable/rectangle_search"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.appcompat.widget.SearchView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Search_home" />
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/burger_menu"
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:layout_margin="2dp"
+                            app:cardElevation="0dp">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/back_ground"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:id="@+id/rounded_circle"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:src="@drawable/round"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/imageView13"
+                                    android:layout_width="64dp"
+                                    android:layout_height="65dp"
+                                    app:layout_constraintBottom_toBottomOf="@id/rounded_circle"
+                                    app:layout_constraintEnd_toEndOf="@id/rounded_circle"
+                                    app:layout_constraintStart_toStartOf="@id/rounded_circle"
+                                    app:layout_constraintTop_toTopOf="@id/rounded_circle"
+                                    app:layout_constraintVertical_bias="0.52"
+                                    app:srcCompat="@drawable/burger" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:gravity="center"
+                                    android:text="@string/burger_home"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/rounded_circle" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/pizza_menu"
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:layout_margin="2dp"
+                            app:cardElevation="0dp">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/back_ground"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:id="@+id/rounded_circle2"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:src="@drawable/round"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/imageView14"
+                                    android:layout_width="64dp"
+                                    android:layout_height="65dp"
+                                    app:layout_constraintBottom_toBottomOf="@id/rounded_circle2"
+                                    app:layout_constraintEnd_toEndOf="@id/rounded_circle2"
+                                    app:layout_constraintStart_toStartOf="@id/rounded_circle2"
+                                    app:layout_constraintTop_toTopOf="@id/rounded_circle2"
+                                    app:layout_constraintVertical_bias="0.52"
+                                    app:srcCompat="@drawable/pizza" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:gravity="center"
+                                    android:text="@string/pizza_home"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/rounded_circle2" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fried_menu"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            app:cardElevation="0dp">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/back_ground"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:id="@+id/rounded_circle3"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:src="@drawable/round"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/imageView15"
+                                    android:layout_width="64dp"
+                                    android:layout_height="65dp"
+                                    app:layout_constraintBottom_toBottomOf="@id/rounded_circle3"
+                                    app:layout_constraintEnd_toEndOf="@id/rounded_circle3"
+                                    app:layout_constraintStart_toStartOf="@id/rounded_circle3"
+                                    app:layout_constraintTop_toTopOf="@id/rounded_circle3"
+                                    app:layout_constraintVertical_bias="0.52"
+                                    app:srcCompat="@drawable/friedchicken" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:gravity="center"
+                                    android:text="@string/fried_chicken_home"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/rounded_circle3" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/salad_menu"
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:layout_margin="2dp"
+                            app:cardElevation="0dp">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/back_ground"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:id="@+id/rounded_circle4"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:src="@drawable/round"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/imageView16"
+                                    android:layout_width="64dp"
+                                    android:layout_height="65dp"
+                                    app:layout_constraintBottom_toBottomOf="@id/rounded_circle4"
+                                    app:layout_constraintEnd_toEndOf="@id/rounded_circle4"
+                                    app:layout_constraintStart_toStartOf="@id/rounded_circle4"
+                                    app:layout_constraintTop_toTopOf="@id/rounded_circle4"
+                                    app:layout_constraintVertical_bias="0.52"
+                                    app:srcCompat="@drawable/salad" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:gravity="center"
+                                    android:text="@string/salad_home"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/rounded_circle4" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/drinks_menu"
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:layout_margin="2dp"
+                            app:cardElevation="0dp">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/back_ground"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:id="@+id/rounded_circle5"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:src="@drawable/round"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/imageView17"
+                                    android:layout_width="64dp"
+                                    android:layout_height="65dp"
+                                    app:layout_constraintBottom_toBottomOf="@id/rounded_circle5"
+                                    app:layout_constraintEnd_toEndOf="@id/rounded_circle5"
+                                    app:layout_constraintStart_toStartOf="@id/rounded_circle5"
+                                    app:layout_constraintTop_toTopOf="@id/rounded_circle5"
+                                    app:layout_constraintVertical_bias="0.52"
+                                    app:srcCompat="@drawable/juice" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:gravity="center"
+                                    android:text="@string/drinks_home"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/rounded_circle5" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/popular_home"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:scrollbars="none"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/hickory_burger_pop"
+                            android:layout_width="140dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/hickoryburger" />
+
+                        <ImageView
+                            android:id="@+id/pizza_piprony_pop"
+                            android:layout_width="140dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/pizzapiprony" />
+
+                        <ImageView
+                            android:id="@+id/fried_pop"
+                            android:layout_width="140dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/friedchickenpop" />
+
+                        <ImageView
+                            android:id="@+id/salad_pop"
+                            android:layout_width="140dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/saladpop" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/offers_home"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:scrollbars="none"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/cheese_smoked_burger"
+                            android:layout_width="209dp"
+                            android:layout_height="107dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/offers" />
+
+                        <ImageView
+                            android:id="@+id/chicken_salad_offer"
+                            android:layout_width="209dp"
+                            android:layout_height="107dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/chickenoffers" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
